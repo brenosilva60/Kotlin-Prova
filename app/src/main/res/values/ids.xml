@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etNome" type="id">s</item>
+    <item name="etCategoria" type="id">categoria</item>
+    <item name="etPreco" type="id">Preco</item>
+    <item name="etQuantidade" type="id">quantidade</item>
+    <item name="btnCadastrar" type="id">cadastrar</item>
+</resources>
