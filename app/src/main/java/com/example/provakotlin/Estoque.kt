@@ -1,18 +1,21 @@
 class Estoque {
-
     companion object {
-        private val produtos = mutableListOf<Produto>()
-
+        var produtos = listOf<Produto>()
         fun adicionarProduto(produto: Produto) {
-            produtos.add(produto)
+            produtos = produtos + produto
         }
 
         fun calcularValorTotalEstoque(): Double {
-            return produtos.sumOf { it.preco * it.quantidade }
+            var valorTotal = 0.0;
+
+            for (produto in produtos) {
+                valorTotal += (produto.quantidade * produto.preco);
+            }
+            return valorTotal
         }
 
-        fun getProdutos(): List<Produto> {
-            return produtos
+        fun listarProdutos() {
+            TODO("Not yet implemented")
         }
     }
 }
